@@ -1,0 +1,97 @@
+rhapsodyuniversalplayer{
+position: relative;
+color: #fff;
+display: inline-block;
+font-weight: bold;
+font-family: Arial, sans-serif;
+padding: 2px;
+padding-left: 26px !important;
+padding-right: 6px !important;
+/*
+background-color: #e95c33;
+background: -moz-linear-gradient(top,#e95c33 0,#e53b2c 100%);
+background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#e95c33),color-stop(100%,#e53b2c));
+background: -webkit-linear-gradient(top,#e95c33 0,#e53b2c 100%);
+background: -o-linear-gradient(top,#e95c33 0,#e53b2c 100%);
+background: linear-gradient(top,#e95c33 0,#e53b2c 100%);
+*/
+background-color: #FEE0C6;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+-moz-transition: background-color all .2s;
+-webkit-transition: background-color all .2s;
+-o-transition: background-color all .2s;
+transition: background-color all .2s;
+margin-right: 2px;
+}
+
+rhapsodyartist{
+color: black;
+}
+
+rhapsodytracks{
+position: absolute;
+background-color: black;
+top: 25px;
+display: none;
+left: 0px !important;
+min-width: 150px;
+z-index: 100000;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+}
+
+rhapsodytrack{
+color: white;
+opacity: 0.8;
+border-bottom: 1px solid white;
+display:block;
+font-size: 12px;
+cursor: pointer;
+padding-left: 25px;
+padding-right: 5px;
+position: relative;
+}
+
+rhapsodytrack:last-of-type{
+border-width: 0px !important;
+}
+
+rhapsodytrack:hover{
+background-color: #e53b2c;
+opacity: 1.0;
+}
+
+.rhapsodybutton {
+position: absolute;
+top: 5px;
+left: 4px;
+/*
+display: inline-block;
+padding-right: 4px;
+   width: 0;
+   height: 0;
+   border-left: 10px solid white;
+   border-top: 5px solid transparent;
+   border-bottom: 5px solid transparent;
+   */
+   background-image:url('http://localhost:8080/images/playbutton.png') !important;
+   height: 18px !important;
+   width: 18px !important;
+   cursor: pointer;
+}
+
+rhapsodyplaybutton {
+position: absolute;
+left: 7px;
+top: 7px;
+padding-right: 4px;
+   width: 0;
+   height: 0;
+   border-left: 10px solid white;
+   border-top: 5px solid transparent;
+   border-bottom: 5px solid transparent;
+   cursor: pointer;
+}
