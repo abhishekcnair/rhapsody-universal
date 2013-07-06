@@ -1,0 +1,20 @@
+{
+  "name": "Rhapsody Universal Player",
+  "version": "3.0",
+  "description": "Music anywhere, anytime...",
+  "permissions": ["contextMenus", "tabs", "http://*/*", "https://*/*"],
+  "browser_action": {
+    "default_icon": "rhapsody16x16.png"
+  },
+  "icons": {
+    "16": "rhapsody16x16.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://www.billboard.com/biz/*", "http://www.npr.org/*"],
+      "css": ["mycontentcss.css"],
+      "js": ["jquery-1.10.1.min.js", "mycontentscript.js"] //"head.load.min.js", "headjs.js"] //
+    }
+  ],
+  "manifest_version": 2
+}
